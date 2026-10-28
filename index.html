@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="2026 年青壯方案＋勞工心理諮商：最多 9 次免費心理諮商的資格、次數、預約步驟和官方連結。有間心房・諮商新手村。">
+<meta property="og:title" content="免費心理諮商懶人包（2026 版）｜有間心房">
+<meta property="og:description" content="15–45 歲、有在工作，最多 9 次免費心理諮商。資格、預約步驟、官方連結一次看。">
+<meta property="og:image" content="card_1.png">
+<title>免費心理諮商懶人包｜有間心房</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: a stack of 4:5 cards (the same cards export as an IG carousel), sized in container units so phone and 1080 px match */
+:root {
+  --paper: #FFF4E3; --card: #FFFBF4; --ink: #2E2541; --muted: #6B6380; --line: #E9DCC6;
+  --orange: #F2994A; --pink: #FF5C7A; --sun: #FFCB47; --blue: #4A6FB5; --green: #3A8A4C; --greenL: #DDEFE6; --blueL: #DCE5F5; --sunL: #FFE7A1;
+  --display: "Huninn", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --green: #7CCB8E; --blue: #8FAEE8; color-scheme: dark } }
+:root[data-theme="dark"] { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --green: #7CCB8E; --blue: #8FAEE8; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; }
+.stack { display: grid; gap: 28px; justify-items: center; }
+.card { box-sizing: border-box; container-type: inline-size; width: min(540px, 100%); aspect-ratio: 4 / 5; max-width: 100%; background: var(--card); border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 9px 0 rgba(46,37,65,.18); position: relative; overflow: hidden; }
+.in { position: absolute; inset: 0; padding: 7cqw 7.5cqw 6cqw; display: flex; flex-direction: column; gap: 3cqw; }
+.tag { align-self: flex-start; font: 700 3.3cqw/1 var(--body); letter-spacing: .08em; padding: 1.6cqw 3cqw; border: 2px solid var(--ink); border-radius: 999px; background: var(--orange); color: #2E2541; }
+h1, h2 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: 11cqw; } h2 { font-size: 8cqw; }
+p, li { font-size: 3.85cqw; line-height: 1.6; margin: 0; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 1.2cqw; }
+.small { font-size: 3cqw; color: var(--muted); line-height: 1.5; }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 3cqw; font-size: 2.8cqw; color: var(--muted); }
+.big { font-family: var(--display); font-size: 21cqw; line-height: 1; color: var(--pink); }
+a { color: var(--blue); font-weight: 700; word-break: break-all; }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 1cqw 3cqw; align-items: center; padding: 2.4cqw 0; border-bottom: 2px dashed var(--line); }
+.row b { font-size: 4.1cqw; } .row span { font-size: 3.2cqw; color: var(--muted); grid-column: 1; }
+.num { grid-row: 1 / span 2; grid-column: 2; font-family: var(--display); font-size: 9cqw; color: var(--pink); white-space: nowrap; }
+.box { background: var(--sunL); border: 2px solid var(--ink); border-radius: 14px; padding: 3cqw 3.6cqw; }
+.box.g { background: var(--greenL); } .box.b { background: var(--blueL); }
+.steps { list-style: none; padding: 0; display: grid; gap: 2.4cqw; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 7.5cqw 1fr; gap: 3cqw; align-items: start; counter-increment: s; }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 5cqw; width: 7.5cqw; height: 7.5cqw; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--sun); color: #2E2541; }
+.heart { width: 30cqw; image-rendering: pixelated; }
+.cover { background: var(--orange); }
+.cover h1, .cover p, .cover .foot { color: #2E2541; }
+.cover .tag { background: #FFFBF4; }
+.hot { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2cqw; }
+.hot div { border: 2px solid var(--ink); border-radius: 14px; padding: 2.4cqw; text-align: center; background: var(--card); }
+.hot b { display: block; font-family: var(--display); font-size: 8cqw; color: var(--pink); }
+.hot span { font-size: 2.9cqw; }
+</style>
+
+</head>
+<body>
+<main class="stack">
+
+<section class="card cover" id="c1"><div class="in">
+  <span class="tag">諮商新手村　2026 版</span>
+  <svg class="heart" viewBox="0 0 16 14" aria-hidden="true" id="heart"></svg>
+  <h1>最多 9 次<br>免費心理諮商<br>懶人包</h1>
+  <p>15–45 歲、有在工作的你，政府補助加起來最多 9 次。自費大約要 2 萬元。</p>
+  <div class="foot"><span>有間心房 @heartatrium</span><span>資訊更新：2026 年 10 月</span></div>
+</div></section>
+
+<section class="card" id="c2"><div class="in">
+  <span class="tag">先看你有幾次</span>
+  <h2>你有幾把鑰匙？</h2>
+  <div>
+    <div class="row"><b>15–45 歲</b><span>衛福部 青壯世代心理健康支持方案</span><em class="num">3 次</em></div>
+    <div class="row"><b>有在工作</b><span>勞動部 勞工心理諮商（含自營作業者、有投保勞工職災保險）</span><em class="num">3＋3</em></div>
+    <div class="row"><b>現役軍人、國軍文職</b><span>國防部 國軍心理健康照護方案</span><em class="num">≤ 6 次</em></div>
+    <div class="row"><b>在學學生</b><span>學校輔導室、學生諮商中心</span><em class="num">依學校</em></div>
+  </div>
+  <p class="small">15–45 歲又有在工作：青壯 3 次＋勞工 3 次，經評估還可再 3 次，最多 9 次。</p>
+  <div class="foot"><span>有間心房</span><span>2 / 8</span></div>
+</div></section>
+
+<section class="card" id="c3"><div class="in">
+  <span class="tag" style="background:var(--blueL)">鑰匙 1</span>
+  <h2>青壯世代心理健康支持方案</h2>
+  <ul>
+    <li><b>誰能用：</b>15–45 歲本國籍，或持健保卡的外籍人士</li>
+    <li><b>次數：</b>3 次，每次補助上限 1,600 元、至少 40 分鐘</li>
+    <li><b>時間：</b>3 個月內用完，每次隔 7 天到 1 個月；到 2026/12/31</li>
+    <li><b>自付：</b>掛號費等行政費用（依機構）</li>
+    <li><b>帶：</b>身分證明。去年、前年用過，今年也能再用</li>
+  </ul>
+  <div class="box b"><p>查有名額的機構：青壯年的心有我傾聽<br><a href="https://sps.mohw.gov.tw/mhs">sps.mohw.gov.tw/mhs</a></p></div>
+  <div class="foot"><span>依據：衛福部 115 年常見問答（115/5/13）</span><span>3 / 8</span></div>
+</div></section>
+
+<section class="card" id="c4"><div class="in">
+  <span class="tag" style="background:var(--greenL)">鑰匙 2</span>
+  <h2>勞工心理諮商服務</h2>
+  <ul>
+    <li><b>誰能用：</b>勞工、自營作業者等工作者，或有投保勞工職業災害保險的人</li>
+    <li><b>第一階段 3 次：</b>每次補助上限 1,600 元、至少 40 分鐘，機構不能另收差額</li>
+    <li><b>第二階段再 3 次：</b>第一階段結束後，過勞量表評為高風險，經轉介評估符合的人</li>
+    <li><b>時間：</b>每階段 3 個月內，每次間隔 7–30 天；到 2026/12/15，經費用完會提早結束</li>
+    <li><b>帶：</b>第一次要出示當月的投保證明</li>
+  </ul>
+  <div class="box g"><p>查合作機構：職業災害預防及重建中心<br><a href="https://www.coapre.org.tw">www.coapre.org.tw</a></p></div>
+  <div class="foot"><span>依據：職災預防及重建中心 115 年度方案（115/1/26）</span><span>4 / 8</span></div>
+</div></section>
+
+<section class="card" id="c5"><div class="in">
+  <span class="tag">常見問題</span>
+  <h2>兩個方案可以一起用嗎？</h2>
+  <div class="box"><p><b>可以。</b>兩個方案分開用，只是<b>同一次諮商</b>只能申請其中一個方案的補助。</p></div>
+  <p class="small">依據：衛福部常見問答（機構篇 Q5）、勞工方案補助規範</p>
+  <h2 style="font-size:6.4cqw">年底沒用完怎麼辦？</h2>
+  <p>今年的次數年底就歸零。照往年慣例，明年還會再開：青壯方案連同前身已經連續辦了 4 年，2027 年的預算案也編了 4.29 億。明年一開放就早點約，名額常常會滿。</p>
+  <p class="small">明年的實際規定以官方公告為準。</p>
+  <div class="foot"><span>有間心房</span><span>5 / 8</span></div>
+</div></section>
+
+<section class="card" id="c6"><div class="in">
+  <span class="tag">一步一步來</span>
+  <h2>怎麼預約？</h2>
+  <ol class="steps">
+    <li><p><b>上官網查</b>有名額的合作機構，順便看收不收行政費用、交通方不方便</p></li>
+    <li><p><b>打電話或線上預約</b>，直接說你要用哪個方案</p></li>
+    <li><p><b>帶證件：</b>身分證明；勞工方案再加當月投保證明</p></li>
+    <li><p><b>去諮商。</b>用完還想談，可以自費，或請機構幫你轉介社區資源</p></li>
+  </ol>
+  <div class="box"><p>電話裡可以這樣說：「你好，我想預約心理諮商，想用青壯世代方案（或勞工心理諮商方案），請問還有名額嗎？掛號費是多少？」</p></div>
+  <div class="foot"><span>有間心房</span><span>6 / 8</span></div>
+</div></section>
+
+<section class="card" id="c7"><div class="in">
+  <span class="tag">其他鑰匙</span>
+  <h2>還有這些資源</h2>
+  <ul>
+    <li><b>國軍心理健康照護方案：</b>現役官兵、文職、軍校生、聘雇人員，每年最多 6 次，不用轉介、可以自己預約，第一次要親自去（次數以國防部公告為準）<br><a href="https://gpwd-mhcp.mnd.gov.tw">gpwd-mhcp.mnd.gov.tw</a></li>
+    <li><b>社區心理衛生中心、心理諮商據點：</b>各縣市都有，優惠或免費<br><a href="https://gov.tw/JSB">gov.tw/JSB</a></li>
+    <li><b>學校：</b>輔導室、學生諮商中心，在學學生免費</li>
+    <li><b>公司的員工協助方案（EAP）：</b>可以問人資</li>
+  </ul>
+  <div class="foot"><span>有間心房</span><span>7 / 8</span></div>
+</div></section>
+
+<section class="card" id="c8"><div class="in">
+  <span class="tag">看完整說明</span>
+  <h2>完整教學在 YouTube</h2>
+  <div class="box b"><p>諮商新手村 EP1「你的免費諮商額度，可能還沒領」<br><span id="yt">（正片上架後補上連結）</span></p></div>
+  <div class="box g"><p><b>現在很難熬嗎？</b>安心專線 <b>1925</b>（24 小時免付費）、生命線 1995、張老師 1980；有立即危險請撥 119 或 110。</p></div>
+  <p class="small">這份懶人包是心理衛教，不能取代專業診斷或治療。本頻道不推薦特定諮商機構，方案每年可能調整、名額會用完，請以官方網站為準。身邊有人想諮商卻卡在錢，可以把這份傳給他。</p>
+  <div class="foot"><span>有間心房 @heartatrium</span><span>8 / 8</span></div>
+</div></section>
+
+</main>
+
+<script>
+// 怦怦, the channel's pixel heart, drawn from the same 16×14 grid as in the videos
+const HM = ["..OOOO....OOOO..", ".OLLPPO..OPPPPO.", "OLLPPPPOOPPPPPPO", "OLPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPDO", ".OPPPPPPPPPPPDO.", "..OPPPPPPPPPDO..", "...OPPPPPPPDO...", "....OPPPPPDO....", ".....OPPPDO.....", "......OPDO......", ".......OO......."];
+const HC = { O: '#2E2541', P: '#FF5C7A', L: '#FFC2CE', D: '#E0406A' };
+const face = { '4,5': 'O', '5,5': 'O', '4,6': 'O', '5,6': 'O', '10,5': 'O', '11,5': 'O', '10,6': 'O', '11,6': 'O', '6,8': 'O', '7,9': 'O', '8,9': 'O', '9,8': 'O', '2,7': 'B', '3,7': 'B', '12,7': 'B', '13,7': 'B' };
+let s = '';
+HM.forEach((row, y) => [...row].forEach((c, x) => {
+  if (c === '.') return;
+  const f = face[x + ',' + y], col = f === 'O' ? '#2E2541' : f === 'B' ? '#FF9DB3' : HC[c];
+  s += `<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${col}"/>`;
+}));
+document.getElementById('heart').innerHTML = s;
+</script>
+
+</body>
+</html>

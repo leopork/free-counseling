@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="跟心理師合不來怎麼辦？合得來的三件事、合得來和不太對的訊號、說出口的三句話、什麼時候可以換人、紅燈、30 秒查證照、第一次可以問的問題。有間心房・諮商新手村 EP4。">
+<meta property="og:title" content="找到你的心理師隊友｜有間心房">
+<meta property="og:description" content="合得來的三件事、說出口的三句話、什麼時候換人、紅燈、30 秒查證照。">
+<meta property="og:image" content="https://leopork.github.io/free-counseling/teammate/card_1.png">
+<title>找到你的心理師隊友</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: a stack of 4:5 cards (the same cards export as an IG carousel), sized in container units so phone and 1080 px match */
+:root {
+  --paper: #FFF4E3; --card: #FFFBF4; --ink: #2E2541; --muted: #6B6380; --line: #E9DCC6;
+  --orange: #F2994A; --pink: #FF5C7A; --sun: #FFCB47; --blue: #4A6FB5; --green: #3A8A4C; --red: #E0406A;
+  --greenL: #DDEFE6; --blueL: #DCE5F5; --sunL: #FFE7A1; --redL: #FBD9E1;
+  --display: "Huninn", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; color-scheme: dark } }
+:root[data-theme="dark"] { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); margin: 0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; }
+.stack { display: grid; gap: 28px; justify-items: center; }
+.card { box-sizing: border-box; container-type: inline-size; width: min(540px, 100%); aspect-ratio: 4 / 5; max-width: 100%; background: var(--card); border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 9px 0 rgba(46,37,65,.18); position: relative; overflow: hidden; }
+.in { position: absolute; inset: 0; padding: 7cqw 7.5cqw 6cqw; display: flex; flex-direction: column; gap: 3cqw; }
+.tag { align-self: flex-start; font: 700 3.3cqw/1 var(--body); letter-spacing: .08em; padding: 1.6cqw 3cqw; border: 2px solid var(--ink); border-radius: 999px; background: var(--orange); color: #2E2541; }
+h1, h2 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: 11cqw; } h2 { font-size: 7.6cqw; }
+p, li { font-size: 3.85cqw; line-height: 1.6; margin: 0; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 1.2cqw; }
+.small { font-size: 3cqw; color: var(--muted); line-height: 1.5; }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 3cqw; font-size: 2.8cqw; color: var(--muted); }
+a { color: var(--blue); font-weight: 700; word-break: break-all; }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.box { background: var(--sunL); border: 2px solid var(--ink); border-radius: 14px; padding: 3cqw 3.6cqw; }
+.box.g { background: var(--greenL); } .box.b { background: var(--blueL); } .box.r { background: var(--redL); }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 2.2cqw; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 7.5cqw 1fr; gap: 3cqw; align-items: start; counter-increment: s; }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 5cqw; width: 7.5cqw; height: 7.5cqw; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--sun); color: #2E2541; }
+.heart { width: 28cqw; image-rendering: pixelated; }
+.cover { background: var(--orange); }
+.cover h1, .cover p, .cover .foot { color: #2E2541; }
+.cover .tag { background: #FFFBF4; }
+/* the teammate card: three stats */
+.stat { display: grid; grid-template-columns: 17cqw 1fr; gap: 1cqw 3cqw; align-items: center; border: 2px solid var(--ink); border-radius: 14px; padding: 2.4cqw 3cqw; background: var(--card); }
+.stat b { grid-row: 1 / span 2; font-family: var(--display); font-weight: 400; font-size: 6.4cqw; color: var(--pink); text-align: center; }
+.stat p { font-size: 3.4cqw; line-height: 1.45; }
+.stat i { font-style: normal; font-size: 3.6cqw; font-weight: 700; }
+.bar { display: flex; gap: 1cqw; } .bar span { flex: 1; height: 2cqw; border: 2px solid var(--ink); background: var(--sun); }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4cqw; }
+.duo > div { border: 2px solid var(--ink); border-radius: 14px; padding: 2.6cqw 3cqw; background: var(--greenL); display: grid; gap: 1cqw; align-content: start; }
+.duo > div.bad { background: var(--redL); }
+.duo .who { font-family: var(--display); font-weight: 400; font-size: 5.2cqw; }
+.duo ul { padding-left: 1.1em; gap: 0.6cqw; } .duo li { font-size: 3.4cqw; line-height: 1.45; }
+.say { display: grid; gap: 2.2cqw; }
+.say p { border: 2px solid var(--ink); border-radius: 14px 14px 14px 4px; padding: 2cqw 3.4cqw; background: var(--card); font-family: var(--display); font-size: 4.6cqw; line-height: 1.35; }
+.say p::before { content: "「"; } .say p::after { content: "」"; }
+.blank { display: inline-block; min-width: 9cqw; border-bottom: 3px solid var(--pink); }
+.red li { font-size: 3.7cqw; }
+</style>
+</head>
+<body>
+<main class="stack">
+
+<section class="card cover" id="c1"><div class="in">
+  <span class="tag">諮商新手村　EP4</span>
+  <svg class="heart" viewBox="0 0 16 14" aria-hidden="true" id="heart"></svg>
+  <h1>找到你的<br>心理師隊友</h1>
+  <p>跟心理師合不來，可以說，也可以換。這份帶你看：合得來是什麼、卡住了怎麼說、什麼時候換人、哪些是紅燈、下一位怎麼挑。</p>
+  <div class="foot"><span>有間心房 IG @heart__atrium</span><span>資訊更新：2026 年 10 月</span></div>
+</div></section>
+
+<section class="card" id="c2"><div class="in">
+  <span class="tag" style="background:var(--blueL)">隊友卡</span>
+  <h2>合得來，不是像朋友一樣聊得來</h2>
+  <p style="font-size:3.5cqw">是你們一起合作的三件事。每格問自己一句：</p>
+  <div class="stat"><b>目標</b><i>我們想去的是同一個地方嗎？</i><p>例如你想談工作和失眠，心理師也知道</p></div>
+  <div class="stat"><b>方法</b><i>這樣的走法，我願意試嗎？</i><p>多聊過去、多練習新做法……可以一起討論</p></div>
+  <div class="stat"><b>信任</b><i>在這裡，我覺得被尊重、被理解嗎？</i><p>不用一開始就很深，但要感覺安全</p></div>
+  <p class="small">合作關係越好，諮商的效果通常越好。</p>
+  <div class="foot"><span>依據：Bordin (1979)、Tryon (2018)、Flückiger (2018)</span><span>2 / 8</span></div>
+</div></section>
+
+<section class="card" id="c3"><div class="in">
+  <span class="tag" style="background:var(--greenL)">看訊號</span>
+  <h2>合得來的訊號，<br>不太對的訊號</h2>
+  <div class="duo">
+    <div><b class="who" style="color:var(--green)">加分</b>
+      <ul><li>有彈性</li><li>誠實</li><li>尊重你</li><li>溫暖、有興趣</li><li>開放、可信任</li><li>專心在你身上</li></ul></div>
+    <div class="bad"><b class="who" style="color:var(--red)">扣分</b>
+      <ul><li>很僵化</li><li>常批評你</li><li>疏離、分心</li><li>安排得太滿，沒有你說話的空間</li><li>一直講自己的事</li></ul></div>
+  </div>
+  <div class="box"><p style="font-size:3.5cqw">一兩次不對勁，不一定就是不合。先說出來，看看你們能不能一起調整。</p></div>
+  <div class="foot"><span>依據：Ackerman &amp; Hilsenroth (2001, 2003) 文獻回顧</span><span>3 / 8</span></div>
+</div></section>
+
+<section class="card" id="c4"><div class="in">
+  <span class="tag" style="background:var(--sunL)">說出口</span>
+  <h2>卡住了，挑一句說就好</h2>
+  <div class="say">
+    <p>我比較想多談<span class="blank"></span>。</p>
+    <p>這樣的方式，讓我有點<span class="blank"></span>。</p>
+    <p>我不確定，我們有沒有在往前。</p>
+  </div>
+  <div class="box g"><p style="font-size:3.5cqw"><b>說出來不是抱怨。</b>關係卡住後能修好，效果通常比較好；你想要的方式被照顧到，也比較不會半途放棄。</p></div>
+    <div class="foot"><span>依據：Eubanks (2018)、Swift (2018)</span><span>4 / 8</span></div>
+</div></section>
+
+<section class="card" id="c5"><div class="in">
+  <span class="tag" style="background:var(--blueL)">換人</span>
+  <h2>換人，是你的權利</h2>
+  <p>什麼時候可以考慮換？</p>
+  <ol class="steps">
+    <li><p>說了，還是<b>一直卡住</b></p></li>
+    <li><p>你們想去的<b>方向差很多</b></p></li>
+    <li><p>你需要的專長，他<b>剛好不擅長</b></p></li>
+  </ol>
+  <div class="box b"><p style="font-size:3.6cqw">可以這樣說：「<b>我想試試看別的心理師，可以請你幫我轉介嗎？</b>」<br>心理師要跟你討論、幫你轉介，不能丟下你不管。</p></div>
+  <p class="small">要談幾次才知道合不合？沒有固定答案，給彼此一點時間，也可以直接問。</p>
+  <div class="foot"><span>依據：臺灣諮商心理學會守則 23–25 條、全聯會守則 14 條</span><span>5 / 8</span></div>
+</div></section>
+
+<section class="card" id="c6"><div class="in">
+  <span class="tag" style="background:var(--redL)">紅燈</span>
+  <h2>這些不是合不合，<br>是不對</h2>
+  <ul class="red">
+    <li>想跟你發展<b>戀愛或性關係</b></li>
+    <li>跟你<b>借錢</b>、拉你做生意，利用你</li>
+    <li>因為你的<b>性別、性傾向、宗教、身分</b>羞辱或歧視你</li>
+    <li>沒有必要，卻把<b>你的事說出去</b></li>
+  </ul>
+  <div class="box r"><p style="font-size:3.6cqw"><b>遇到這些，可以直接離開。</b>也可以向心理師執業所在地的<b>縣市衛生局</b>反映，或向各地心理師公會的<b>倫理委員會</b>申訴。</p></div>
+  <div class="foot"><span>依據：臺灣諮商心理學會守則第 20、21 條、心理師法第 17 條</span><span>6 / 8</span></div>
+</div></section>
+
+<section class="card" id="c7"><div class="in">
+  <span class="tag">下一位怎麼挑</span>
+  <h2>三步，找下一位隊友</h2>
+  <div class="box b"><p style="font-size:3.5cqw"><b>① 30 秒查證照</b>：打開衛福部醫事查詢系統 <a href="https://ma.mohw.gov.tw/">ma.mohw.gov.tw</a> →「醫事人員查詢」→ 類別選諮商心理師或臨床心理師 → 輸入姓名（至少兩字）、執業縣市、驗證碼</p></div>
+  <p style="font-size:3.4cqw">沒有證書不能用「心理師」的名稱，違者罰 3 萬到 15 萬。</p>
+  <div class="box g"><p style="font-size:3.5cqw"><b>② 看專長和取向</b>：有人擅長家庭，有人擅長職場、失眠、伴侶……</p></div>
+  <div class="box"><p style="font-size:3.5cqw"><b>③ 第一次就可以問</b>：我們會怎麼進行？大概多久會知道有沒有幫助？覺得不合適，可以怎麼說？</p></div>
+  <div class="foot"><span>依據：心理師法第 5、24、36 條</span><span>7 / 8</span></div>
+</div></section>
+
+<section class="card" id="c8"><div class="in">
+  <span class="tag">看更多</span>
+  <h2>諮商新手村在 YouTube</h2>
+  <div class="box b"><p><b>EP4</b>　跟心理師合不來，可以換嗎？<br><a href="https://youtu.be/l3s5pAkur14">youtu.be/l3s5pAkur14</a></p></div>
+  <ul style="gap:0.6cqw">
+    <li><b>EP3</b>　諮商室裡的 50 分鐘，到底在幹嘛？<br><a href="https://youtu.be/vuwDib6Ubjs">youtu.be/vuwDib6Ubjs</a></li>
+    <li><b>EP2</b>　我又沒怎樣，幹嘛諮商？<br><a href="https://youtu.be/D152UbyrSnE">youtu.be/D152UbyrSnE</a></li>
+    <li><b>EP1</b>　價值兩萬元的諮商，你可能還沒領<br><a href="https://youtu.be/0aGlQ9jN3vw">youtu.be/0aGlQ9jN3vw</a></li>
+  </ul>
+  <p style="font-size:3.4cqw">更多懶人包：<a href="https://leopork.github.io/free-counseling/">免費諮商</a>、<a href="https://leopork.github.io/free-counseling/first-session/">第一次諮商地圖</a></p>
+  <p class="small">現在很難熬嗎？安心專線 1925（24 小時免付費）、生命線 1995、張老師 1980；有立即危險請撥 119 或 110。心理衛教，不能取代專業診斷或治療。</p>
+  <div class="foot"><span>有間心房 IG @heart__atrium</span><span>8 / 8</span></div>
+</div></section>
+
+</main>
+
+<script>
+// 怦怦, the channel's pixel heart, drawn from the same 16×14 grid as in the videos
+const HM = ["..OOOO....OOOO..", ".OLLPPO..OPPPPO.", "OLLPPPPOOPPPPPPO", "OLPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPDO", ".OPPPPPPPPPPPDO.", "..OPPPPPPPPPDO..", "...OPPPPPPPDO...", "....OPPPPPDO....", ".....OPPPDO.....", "......OPDO......", ".......OO......."];
+const HC = { O: '#2E2541', P: '#FF5C7A', L: '#FFC2CE', D: '#E0406A' };
+const face = { '4,5': 'O', '5,5': 'O', '4,6': 'O', '5,6': 'O', '10,5': 'O', '11,5': 'O', '10,6': 'O', '11,6': 'O', '6,8': 'O', '7,9': 'O', '8,9': 'O', '9,8': 'O', '2,7': 'B', '3,7': 'B', '12,7': 'B', '13,7': 'B' };
+let s = '';
+HM.forEach((row, y) => [...row].forEach((c, x) => {
+  if (c === '.') return;
+  const f = face[x + ',' + y], col = f === 'O' ? '#2E2541' : f === 'B' ? '#FF9DB3' : HC[c];
+  s += `<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${col}"/>`;
+}));
+document.getElementById('heart').innerHTML = s;
+</script>
+
+</body>
+</html>

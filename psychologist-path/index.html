@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="怎麼當心理師？研究所兩扇門、錄取率、研究所三年在做什麼、全職實習一年、國考怎麼考、考過以後，還有要花幾年。有間心房・我要成為心理師 EP1。">
+<meta property="og:title" content="心理師之路｜有間心房">
+<meta property="og:description" content="想當心理師要過三關：研究所、全職實習、國考。每一關在做什麼、要幾年、最難的是哪一關。">
+<meta property="og:image" content="https://leopork.github.io/free-counseling/psychologist-path/card_1.png">
+<title>心理師之路</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: a stack of 4:5 cards (the same cards export as an IG carousel), sized in container units so phone and 1080 px match */
+:root {
+  --paper: #F6F0E6; --card: #FFFBF4; --ink: #2E2541; --muted: #6B6380; --line: #E4DCCF;
+  --brand: #4A6FB5; --pink: #FF5C7A; --pinkText: #B02E52; --sun: #FFCB47; --blue: #4A6FB5; --green: #3A8A4C; --red: #E0406A;
+  --greenL: #DDEFE6; --blueL: #DCE5F5; --sunL: #FFE7A1; --redL: #FBD9E1;
+  --display: "Huninn", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; --pinkText: #FF8DA6; color-scheme: dark } }
+:root[data-theme="dark"] { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; --pinkText: #FF8DA6; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); margin: 0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; }
+.stack { display: grid; gap: 28px; justify-items: center; }
+.card { box-sizing: border-box; container-type: inline-size; width: min(540px, 100%); aspect-ratio: 4 / 5; max-width: 100%; background: var(--card); border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 9px 0 rgba(46,37,65,.18); position: relative; overflow: hidden; }
+.in { position: absolute; inset: 0; padding: 6.5cqw 7cqw 5.5cqw; display: flex; flex-direction: column; gap: 2.6cqw; }
+.tag { align-self: flex-start; font: 700 3.3cqw/1 var(--body); letter-spacing: .08em; padding: 1.6cqw 3cqw; border: 2px solid var(--ink); border-radius: 999px; background: var(--blueL); color: var(--ink); }
+h1, h2 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: 13cqw; } h2 { font-size: 7.2cqw; }
+p, li { font-size: 3.6cqw; line-height: 1.55; margin: 0; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 1cqw; }
+b { font-weight: 700; }
+.small { font-size: 3cqw; color: var(--muted); line-height: 1.5; }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 3cqw; font-size: 2.7cqw; line-height: 1.4; color: var(--muted); }
+.foot span:last-child { flex: none; }
+a { color: var(--blue); font-weight: 700; word-break: break-all; }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.box { background: var(--sunL); border: 2px solid var(--ink); border-radius: 14px; padding: 2.6cqw 3.4cqw; }
+.box p { font-size: 3.4cqw; line-height: 1.5; }
+.box.g { background: var(--greenL); } .box.b { background: var(--blueL); } .box.r { background: var(--redL); }
+/* art: a frame from the EP1 video, cropped above the subtitles */
+.art { display: block; width: 100%; aspect-ratio: var(--ar, 2.45); object-fit: cover; border: 2px solid var(--ink); border-radius: 14px; flex: none; background: var(--blueL); }
+/* 臨床 differs: a small pill so the clinical path is easy to spot */
+.cl { display: inline-block; font: 700 2.7cqw/1 var(--body); padding: .7cqw 1.6cqw; margin-right: 1cqw; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--sunL); color: var(--ink); vertical-align: .25em; }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.8cqw; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 7cqw 1fr; gap: 2.6cqw; align-items: start; counter-increment: s; }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 4.6cqw; width: 7cqw; height: 7cqw; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--sun); color: #2E2541; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4cqw; }
+.duo > div { border: 2px solid var(--ink); border-radius: 14px; padding: 2.4cqw 2.8cqw; background: var(--blueL); display: grid; gap: .8cqw; align-content: start; }
+.duo > div.alt { background: var(--greenL); }
+.duo .who { font-family: var(--display); font-weight: 400; font-size: 5cqw; }
+.duo ul { padding-left: 1.05em; gap: .4cqw; } .duo li { font-size: 3.3cqw; line-height: 1.45; }
+.stat { display: grid; grid-template-columns: 22cqw 1fr; gap: .4cqw 3cqw; align-items: center; border: 2px solid var(--ink); border-radius: 14px; padding: 1.6cqw 3cqw; background: var(--card); }
+.stat b { grid-row: 1 / span 2; font-family: var(--display); font-weight: 400; font-size: 6cqw; line-height: 1.1; color: var(--pinkText); text-align: center; }
+.stat i { font-style: normal; font-size: 3.5cqw; font-weight: 700; }
+.stat p { font-size: 3.1cqw; line-height: 1.35; }
+.big { display: inline-block; margin-top: .6cqw; font-size: 3.6cqw; font-weight: 700; }
+.ph { display: inline-block; margin-top: .6cqw; padding: .8cqw 2cqw; border: 2px dashed var(--ink); border-radius: 8px; background: var(--sunL); font-weight: 700; }
+.heart { width: 15cqw; image-rendering: pixelated; flex: none; }
+/* cover: brand blue, the RPG map from the video bleeding off the top */
+.cover { background: var(--brand); }
+.cover .in { padding-top: 0; }
+.cover .art { width: auto; margin: 0 -7cqw; border: 0; border-bottom: 3px solid #2E2541; border-radius: 0; --ar: 2.2; }
+.cover .tag { background: #FFFBF4; color: #2E2541; }
+.cover h1 { color: #FFFFFF; }
+.cover h1 mark { background: linear-gradient(transparent 55%, #FFCB47 55%); color: #FFFFFF; padding: 0 .1em; }
+.cover p { color: #FFFFFF; font-size: 4cqw; }
+.cover .foot { color: #E8EEFA; }
+.eps { padding-left: 0; list-style: none; display: grid; grid-template-columns: auto 1fr; gap: .6cqw 3cqw; }
+.eps li { display: contents; } .eps li > span, .eps li > a { font-size: 3.2cqw; line-height: 1.45; }
+.yrs { display: grid; grid-template-columns: 1fr 1fr 1.25fr 1fr; gap: 1.4cqw; }
+.yrs div { border: 2px solid var(--ink); border-radius: 10px; padding: 1.4cqw 1.6cqw; background: var(--card); text-align: center; display: grid; gap: .3cqw; }
+.yrs b { font-family: var(--display); font-weight: 400; font-size: 4.6cqw; line-height: 1.1; }
+.yrs span { font-size: 2.8cqw; line-height: 1.3; }
+.yrs .p { background: var(--sunL); } .yrs .x { background: var(--redL); border-style: dashed; }
+.toc { display: flex; flex-wrap: wrap; gap: 1.6cqw; margin: 0; padding: 0; list-style: none; }
+.toc li { font: 700 3.3cqw/1 var(--body); padding: 1.6cqw 2.6cqw; border: 2px solid #2E2541; border-radius: 999px; background: #DCE5F5; color: #2E2541; }
+.row { display: flex; align-items: center; gap: 3cqw; }
+</style>
+</head>
+<body>
+<main class="stack">
+
+<section class="card cover" id="c1"><div class="in">
+  <img class="art" src="img/map.jpg" alt="像素風的 RPG 地圖：一條路依序經過三個關卡，1 研究所（城堡）、2 全職實習（小屋）、3 國家考試（石門）">
+  <span class="tag">我要成為心理師　EP1 懶人包</span>
+  <div class="row"><h1><mark>心理師</mark>之路</h1><svg class="heart" viewBox="0 0 16 14" aria-hidden="true" id="heart"></svg></div>
+  <p>想當諮商心理師或臨床心理師，要過哪三關？每一關在做什麼、要念幾年、最難的是哪一關，這份一次看懂。</p>
+  <ul class="toc"><li>兩扇門</li><li>錄取率</li><li>怎麼報</li><li>研究所三年</li><li>實習一年</li><li>國考</li><li>考過以後</li><li>要幾年</li></ul>
+  <div class="foot"><span>有間心房　IG @heart__atrium</span><span>資訊更新：2026 年 11 月</span></div>
+</div></section>
+
+<section class="card" id="c2"><div class="in">
+  <span class="tag">先看全貌</span>
+  <h2>想當心理師，要過三關</h2>
+  <img class="art" src="img/two.jpg" alt="一條路在路牌前分成「諮商」和「臨床」兩條，兩邊都有讀碩士、全職實習、考國考三個關卡" style="--ar: 3.03">
+  <ol class="steps" style="gap:1.2cqw">
+    <li><p><b>考上研究所</b>：諮商或臨床心理的碩士班，大學念什麼系都可以</p></li>
+    <li><p><b>全職實習</b>至少一年</p></li>
+    <li><p><b>考過國考</b>，再申請證書、登記執業</p></li>
+  </ol>
+  <div class="box"><p><b>心理系畢業 ≠ 心理師：</b>要有證書才能這樣自稱。</p></div>
+  <p class="small">兩種心理師關卡一樣，差在訓練重點：<span class="cl">臨床</span>以醫院實習為主、重心理衡鑑；諮商的場域比較多元、重怎麼陪人談。</p>
+  <div class="foot"><span>依據：心理師法第 5 條、心理師考試規則第 6、7 條</span><span>2 / 10</span></div>
+</div></section>
+
+<section class="card" id="c3"><div class="in">
+  <span class="tag">第一關　研究所</span>
+  <h2>研究所有兩扇門</h2>
+  <img class="art" src="img/doors.jpg" alt="城堡有兩扇門，左邊寫推甄、右邊寫一般考試，小安站在城堡前" style="--ar: 2.76">
+  <div class="duo">
+    <div><b class="who">推甄</b>
+      <ul><li>9 月出簡章</li><li>9–10 月報名、交書審資料</li><li>書審過了才能面試</li><li>11–12 月放榜</li></ul></div>
+    <div class="alt"><b class="who">一般考試</b>
+      <ul><li>11 月報名（例：師大 11/10–20）</li><li>1 月底筆試</li><li>很多學校還有口試</li><li>3 月放榜</li></ul></div>
+  </div>
+  <div class="box"><p>書審資料，很多心理師建議<b>暑假前</b>就開始準備。</p></div>
+  <div class="foot"><span>依據：116 學年度 6 校甄試簡章、各校碩士班考試簡章（以當年簡章為準）</span><span>3 / 10</span></div>
+</div></section>
+
+<section class="card" id="c4"><div class="in">
+  <span class="tag" style="background:var(--redL)">錄取率</span>
+  <h2>最難的，就是第一關</h2>
+  <img class="art" src="img/hall.jpg" alt="講堂裡擠滿考生，黑板寫報名人數 370，上方垂下 8 張紅椅子，大字 370 人搶 8 個位子" style="--ar: 3.15">
+  <div class="stat"><b>46 搶 1</b><i>師大諮商組一般考試</i><p>113 學年 370 人報名、錄取 8 人<br>114 學年 354／8、115 學年 332／8</p></div>
+  <div class="stat"><b>九成五</b><i>筆試就刷掉</i><p>最多只有 16 人能進口試</p></div>
+  <div class="box b"><p><b>大部分學校的錄取率是個位數。</b>不過一個人通常報好幾間，這<b>不是你考上的機率</b>。</p></div>
+  <div class="foot"><span>資料：師大教務處報考人數統計、簡章；錄取率整理 Threads @totoro_psy</span><span>4 / 10</span></div>
+</div></section>
+
+<section class="card" id="c5"><div class="in">
+  <span class="tag">怎麼報、怎麼排</span>
+  <h2>報幾間？兩扇門可以都走</h2>
+  <div class="box b"><p><b>推甄和考試可以同時報。</b>而且推甄還沒放榜，考試就開始報名了（例：師大推甄 11/19 放榜，考試報名 11/20 截止），要先決定報不報。</p></div>
+  <p><b>報名策略大概三種：</b></p>
+  <ol class="steps">
+    <li><p><b>目標型</b>：只報幾間，因為喜歡它的特色</p></li>
+    <li><p><b>只報國立</b></p></li>
+    <li><p><b>能報的都報</b>：先求有，再求好</p></li>
+  </ol>
+  <div class="box"><p><b>照總成績排名。</b>名額內是正取，後面是備取；正取的人放棄，備取才依序遞補，有的拖到隔年 2 月。</p></div>
+  <div class="foot"><span>依據：政大、師大、中央 116 學年度招生簡章</span><span>5 / 10</span></div>
+</div></section>
+
+<section class="card" id="c6"><div class="in">
+  <span class="tag">研究所在做什麼</span>
+  <h2>考上以後，最快也要三年</h2>
+  <div class="yrs" role="img" aria-label="碩一上課，碩二上課加兼職實習，碩三全職實習加論文，碩四是論文沒寫完的人多念的">
+    <div><b>碩一</b><span>上課</span></div>
+    <div><b>碩二</b><span>上課<br>兼職實習</span></div>
+    <div class="p"><b>碩三</b><span>全職實習<br>＋寫論文</span></div>
+    <div class="x"><b>碩四？</b><span>論文<br>沒寫完</span></div>
+  </div>
+  <ul>
+    <li><b>修滿 21 學分</b>：諮商 7 個領域　<span class="cl">臨床</span>3 個領域</li>
+    <li><b>兼職實習</b>：每週約 8–24 小時，各校不同；開始接個案、帶團體，每週有督導</li>
+    <li>諮商：<b>課全部修完</b>才能去全職實習（學會規定，115 年起）</li>
+    <li><b>碩士論文</b>：碩二提計畫、實習那年邊寫；口試沒過，拿不到學位、不能考國考</li>
+  </ul>
+  <div class="box"><p>論文常寫不完：<b>大部分人念三年半到四年。</b></p></div>
+  <div class="foot"><span>依據：考試規則第 6、7 條；學會實習審查辦法；教育部在學人數（推估）</span><span>6 / 10</span></div>
+</div></section>
+
+<section class="card" id="c7"><div class="in">
+  <span class="tag" style="background:var(--greenL)">第二關　全職實習</span>
+  <h2>實習一年，要做什麼？</h2>
+  <ul style="gap:.5cqw">
+    <li><b>自己找</b>：碩二上看機構招募公告、寄履歷，寒假前後面試</li>
+    <li><b>全職、連續</b> 43 週或 1,500 小時以上<br><span class="cl">臨床</span>48 週或 1,920 小時以上</li>
+    <li><b>在哪裡</b>：學校最多（約四分之三，大多是大專），也有醫院、社區、諮商所</li>
+    <li><b>一週約 32 小時</b>：四天在機構、一天回學校；跟個案談話平均一週不到 8 小時</li>
+    <li><b>一定有人帶</b>：每週至少 1 小時、全年至少 50 小時一對一督導<br><span class="cl">臨床</span>沒有這條規定</li>
+  </ul>
+  <div class="box r"><p><b>有薪水嗎？絕大多數沒有。</b>少數大專給鐘點費、有些社區給津貼；也有要繳實習費、督導另付一次一兩千。</p></div>
+  <div class="foot"><span>依據：心理師法施行細則、考試規則第 6 條、林烝增與林家興（2019）</span><span>7 / 10</span></div>
+</div></section>
+
+<section class="card" id="c8"><div class="in">
+  <span class="tag" style="background:var(--sunL)">第三關　國考</span>
+  <h2>國考：平均 60 分及格</h2>
+  <img class="art" src="img/exam.jpg" alt="一扇大石門上掛著月曆，4 月、7 月、9 月被圈起來，旁邊一台電腦寫國考，標籤 4 月報名、7 月底考、9 月放榜" style="--ar: 3.31">
+  <ul>
+    <li><b>資格</b>：碩士學位＋實習證明；還沒畢業可以先報名（附條件應考）</li>
+    <li><b>一年一次</b>：4 月報名、7 月底考、9 月放榜</li>
+    <li><b>六科</b>，每科都有申論和測驗題；六科平均 60 分及格，但<b>有一科零分</b>（缺考也算）就不及格<br><span class="cl">臨床</span>也是六科</li>
+  </ul>
+  <div class="stat"><b>約八成</b><i>到考的人裡及格的比例</i><p>諮商：79.3%、85.0%、81.8%<br>臨床：90.8%、83.3%、79.5%<br>（113、114、115 年，考選部）</p></div>
+  <div class="foot"><span>依據：考選部應考須知與及格統計、心理師考試規則第 14 條</span><span>8 / 10</span></div>
+</div></section>
+
+<section class="card" id="c9"><div class="in">
+  <span class="tag">考過以後</span>
+  <h2>考過了，還不能馬上上班</h2>
+  <img class="art" src="img/lv1.jpg" alt="三間小屋上方寫機構、公會、衛生局，前兩間已經打勾，小安正走向第三間" style="--ar: 2.78">
+  <ol class="steps">
+    <li><p>向<b>衛福部</b>申請心理師證書</p></li>
+    <li><p>找到工作的<b>機構</b>，加入當地<b>心理師公會</b></p></li>
+    <li><p>到<b>縣市衛生局</b>辦執業登記</p></li>
+  </ol>
+  <p class="small">之後每 6 年要修滿 120 點繼續教育，才能換照。</p>
+  <div class="box g"><p><b>要幾年？</b>大學 4 年＋研究所最快 3 年＝<b>最快 7 年</b>；大部分人研究所念三年半到四年，<b>通常 8 年左右</b>。</p></div>
+  <div class="foot"><span>依據：心理師法第 4、7、8 條、繼續教育辦法</span><span>9 / 10</span></div>
+</div></section>
+
+<section class="card" id="c10"><div class="in">
+  <span class="tag">看更多</span>
+  <h2>完整影片在 YouTube</h2>
+  <div class="box b"><p><b>我要成為心理師 EP1</b>　怎麼當心理師？370 人搶 8 個位子，最難的不是國考<br><a class="big" href="https://youtu.be/NSUUJPSnfE0">▶ youtu.be/NSUUJPSnfE0</a></p></div>
+  <p style="font-size:3.2cqw">想先知道諮商在做什麼？看<b>諮商新手村</b>：</p>
+  <ul class="eps">
+    <li><span><b>EP1</b>　免費諮商額度</span><a href="https://youtu.be/0aGlQ9jN3vw">youtu.be/0aGlQ9jN3vw</a></li>
+    <li><span><b>EP2</b>　我又沒怎樣</span><a href="https://youtu.be/D152UbyrSnE">youtu.be/D152UbyrSnE</a></li>
+    <li><span><b>EP3</b>　諮商室 50 分鐘</span><a href="https://youtu.be/vuwDib6Ubjs">youtu.be/vuwDib6Ubjs</a></li>
+    <li><span><b>EP4</b>　合不來，可以換嗎</span><a href="https://youtu.be/l3s5pAkur14">youtu.be/l3s5pAkur14</a></li>
+    <li><span><b>EP5</b>　為什麼那麼貴</span><a href="https://youtu.be/Us1tdFvrckA">youtu.be/Us1tdFvrckA</a></li>
+  </ul>
+  <!-- 兩份延伸文件（書審模板、考試秘訣與申論模板）設成公開分享後，把下面這段的註解拿掉：
+  <p style="font-size:3.2cqw">準備推甄、考試：<a href="https://claude.ai/artifact/MfxvJxJRtm5MCQKAWFK6aC">書審模板與高分秘訣</a>、<a href="https://claude.ai/artifact/Nx6oct5opATyfXx2ijoP3n">考試秘訣與申論題架構模板</a></p>
+  -->
+  <p class="small">現在很難熬嗎？安心專線 1925（24 小時免付費）、生命線 1995、張老師 1980；有立即危險請撥 119 或 110。升學資訊以各校當年簡章為準。</p>
+  <div class="foot"><span>有間心房　YouTube @heartatrium<br>IG、Threads @heart__atrium</span><span>10 / 10</span></div>
+</div></section>
+
+</main>
+
+<script>
+// 怦怦, the channel's pixel heart, drawn from the same 16×14 grid as in the videos
+const HM = ["..OOOO....OOOO..", ".OLLPPO..OPPPPO.", "OLLPPPPOOPPPPPPO", "OLPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPDO", ".OPPPPPPPPPPPDO.", "..OPPPPPPPPPDO..", "...OPPPPPPPDO...", "....OPPPPPDO....", ".....OPPPDO.....", "......OPDO......", ".......OO......."];
+const HC = { O: '#2E2541', P: '#FF5C7A', L: '#FFC2CE', D: '#E0406A' };
+const face = { '4,5': 'O', '5,5': 'O', '4,6': 'O', '5,6': 'O', '10,5': 'O', '11,5': 'O', '10,6': 'O', '11,6': 'O', '6,8': 'O', '7,9': 'O', '8,9': 'O', '9,8': 'O', '2,7': 'B', '3,7': 'B', '12,7': 'B', '13,7': 'B' };
+let s = '';
+HM.forEach((row, y) => [...row].forEach((c, x) => {
+  if (c === '.') return;
+  const f = face[x + ',' + y], col = f === 'O' ? '#2E2541' : f === 'B' ? '#FF9DB3' : HC[c];
+  s += `<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${col}"/>`;
+}));
+document.getElementById('heart').innerHTML = s;
+</script>
+
+</body>
+</html>

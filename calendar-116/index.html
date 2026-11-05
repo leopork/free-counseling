@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="116 學年度諮商所推甄放榜、一般考試報名、筆試、口試、放榜日期一次看。師大推甄 11/19 放榜、一般考試 11/20 下午 5 點截止。還有推甄和考試比較、報名費總表、兩扇一起走的檢查表、考生常見問題。有間心房・我要成為心理師 EP2。">
+<meta property="og:title" content="116 諮商所報名月曆｜有間心房">
+<meta property="og:description" content="師大推甄 11/19 放榜，一般考試 11/20 下午 5 點就截止。各校推甄放榜、一般考試報名和筆試日期，一張月曆看完。">
+<meta property="og:image" content="https://leopork.github.io/free-counseling/calendar-116/card_1.png">
+<title>116 諮商所報名月曆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: a stack of 4:5 cards (the same cards export as the IG carousel), sized in container units so phone and 1080 px match */
+:root {
+  --paper: #F6F0E6; --card: #FFFBF4; --ink: #2E2541; --muted: #6B6380; --line: #E4DCCF;
+  --brand: #4A6FB5; --pink: #FF5C7A; --pinkText: #B02E52; --sun: #FFCB47; --blue: #4A6FB5; --green: #3A8A4C; --red: #E0406A;
+  --greenL: #DDEFE6; --blueL: #DCE5F5; --sunL: #FFE7A1; --redL: #FBD9E1;
+  --display: "Huninn", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; --pinkText: #FF8DA6; color-scheme: dark } }
+:root[data-theme="dark"] { --paper: #1F1A2C; --card: #2A2338; --ink: #F6F0E6; --muted: #B9B0CC; --line: #43395A; --greenL: #24392F; --blueL: #26304A; --sunL: #4A3E1E; --redL: #4A2633; --green: #7CCB8E; --blue: #8FAEE8; --red: #FF8DA6; --pinkText: #FF8DA6; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); margin: 0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; }
+.stack { display: grid; gap: 28px; justify-items: center; }
+.card { box-sizing: border-box; container-type: inline-size; width: min(540px, 100%); aspect-ratio: 4 / 5; max-width: 100%; background: var(--card); border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 9px 0 rgba(46,37,65,.18); position: relative; overflow: hidden; }
+.in { position: absolute; inset: 0; padding: 6.5cqw 7cqw 5.5cqw; display: flex; flex-direction: column; gap: 2.4cqw; }
+.tag { align-self: flex-start; font: 700 3.3cqw/1 var(--body); letter-spacing: .08em; padding: 1.6cqw 3cqw; border: 2px solid var(--ink); border-radius: 999px; background: var(--blueL); color: var(--ink); }
+.tag.off { background: var(--card); border-style: dashed; }
+h1, h2 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: 12.4cqw; } h2 { font-size: 6.8cqw; }
+p, li { font-size: 3.5cqw; line-height: 1.5; margin: 0; }
+ul, ol { margin: 0; padding-left: 1.2em; display: grid; gap: 1cqw; }
+b { font-weight: 700; }
+.small { font-size: 2.9cqw; color: var(--muted); line-height: 1.5; }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 3cqw; font-size: 2.6cqw; line-height: 1.4; color: var(--muted); }
+.foot span:last-child { flex: none; }
+a { color: var(--blue); font-weight: 700; word-break: break-all; }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.box { background: var(--sunL); border: 2px solid var(--ink); border-radius: 14px; padding: 2.4cqw 3.2cqw; }
+.box p { font-size: 3.3cqw; line-height: 1.5; }
+.box.g { background: var(--greenL); } .box.b { background: var(--blueL); } .box.r { background: var(--redL); }
+/* art: a frame from the EP2 video, cropped inside the stage (no HUD, no subtitles) */
+.art { display: block; width: 100%; aspect-ratio: var(--ar, 2.8); object-fit: cover; border: 2px solid var(--ink); border-radius: 14px; flex: none; background: var(--blueL); }
+.heart { width: 13cqw; image-rendering: pixelated; flex: none; }
+.row { display: flex; align-items: center; gap: 3cqw; }
+/* the two doors keep the video's colours: 推甄 pink, 一般考試 blue */
+.k { display: inline-block; font: 700 2.8cqw/1 var(--body); padding: .8cqw 1.8cqw; border: 1.5px solid var(--ink); border-radius: 999px; color: var(--ink); vertical-align: .1em; }
+.k.r { background: var(--redL); } .k.e { background: var(--blueL); }
+.legend { display: flex; flex-wrap: wrap; gap: 1.6cqw 3cqw; align-items: center; font-size: 2.9cqw; color: var(--muted); }
+
+/* cover: brand blue, the castle from the video bleeding off the top */
+.cover { background: var(--brand); }
+.cover .in { padding-top: 0; gap: 2.6cqw; }
+.cover .art { width: auto; margin: 0 -7cqw; border: 0; border-bottom: 3px solid #2E2541; border-radius: 0; --ar: 3; object-position: 50% 45%; }
+.cover .tag { background: #FFFBF4; color: #2E2541; }
+.cover h1 { color: #FFFFFF; }
+.cover h1 mark { background: linear-gradient(transparent 55%, #FFCB47 55%); color: #FFFFFF; padding: 0 .1em; }
+.cover p { color: #FFFFFF; font-size: 3.7cqw; }
+.cover .foot { color: #E8EEFA; }
+.alarm { background: #FFFBF4; color: #2E2541; border: 3px solid #2E2541; border-radius: 14px; box-shadow: 4px 5px 0 #E0406A; padding: 2.2cqw 3.4cqw; display: grid; gap: .8cqw; transform: rotate(-1.2deg); }
+.alarm small { font: 700 2.9cqw/1 var(--body); color: #B02E52; letter-spacing: .06em; }
+.alarm strong { font-family: var(--display); font-weight: 400; font-size: 5.2cqw; line-height: 1.25; }
+.alarm em { font-style: normal; color: #B02E52; }
+.toc { display: flex; flex-wrap: wrap; gap: 1.4cqw; margin: 0; padding: 0; list-style: none; }
+.toc li { font: 700 3.1cqw/1 var(--body); padding: 1.5cqw 2.4cqw; border: 2px solid #2E2541; border-radius: 999px; background: #DCE5F5; color: #2E2541; }
+
+/* month agenda: each day is a tear-off calendar tile beside its events */
+.cal { display: grid; grid-template-columns: 1fr 1fr; gap: 2.6cqw; align-items: start; }
+.mon { display: grid; gap: 1.1cqw; align-content: start; }
+.mh { font-family: var(--display); font-size: 4cqw; line-height: 1; background: #E0406A; color: #FFFFFF; border: 2px solid var(--ink); border-radius: 10px 10px 4px 4px; padding: 1.4cqw 2.4cqw; }
+.mh span { font-family: var(--body); font-size: 2.5cqw; opacity: .9; margin-left: 1cqw; }
+.d { display: grid; grid-template-columns: 11.2cqw 1fr; gap: 1.2cqw; align-items: center; }
+.dt { display: flex; align-items: baseline; justify-content: center; gap: .5cqw; height: 5.6cqw; padding-top: .3cqw; box-sizing: border-box; border: 2px solid var(--ink); border-radius: 7px; background: var(--card); line-height: 1.25; }
+.dt b { font-family: var(--display); font-weight: 400; font-size: 3.7cqw; }
+.dt i { font-style: normal; font-size: 2.2cqw; color: var(--muted); letter-spacing: -.02em; }
+.evs { display: grid; gap: .6cqw; }
+.ev { font-size: 2.9cqw; line-height: 1.25; padding: .7cqw 1.2cqw; border: 1.5px solid var(--ink); border-radius: 7px; white-space: nowrap; }
+.ev.r { background: var(--redL); } .ev.e { background: var(--blueL); }
+.ev b { font-weight: 900; }
+.hot .dt { background: var(--sun); color: #2E2541; }
+.hot .dt i { color: #2E2541; }
+.hot .ev { border-width: 2.5px; font-weight: 700; box-shadow: 2px 2px 0 var(--red); }
+.alert { margin-top: .6cqw; background: var(--sunL); border: 2.5px solid var(--ink); border-radius: 12px; padding: 2cqw 2.6cqw; display: grid; gap: .8cqw; box-shadow: 3px 4px 0 var(--red); }
+.alert b { font-family: var(--display); font-weight: 400; font-size: 3.9cqw; line-height: 1.2; }
+.alert p { font-size: 2.9cqw; line-height: 1.45; }
+.alert p strong { font-weight: 900; }
+
+/* schedule tables (real tables, so they read in order for screen readers) */
+.tbl { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0; border: 2px solid var(--ink); border-radius: 14px; overflow: hidden; background: var(--card); }
+.tbl th, .tbl td { font-size: 3.2cqw; line-height: 1.28; padding: 1.15cqw 1.2cqw; text-align: center; border-bottom: 1.5px solid var(--line); }
+.tbl tr:last-child th, .tbl tr:last-child td { border-bottom: 0; }
+.tbl thead th { background: var(--blueL); font-family: var(--display); font-weight: 400; font-size: 4cqw; border-bottom: 2px solid var(--ink); }
+.tbl tbody th { text-align: left; font-weight: 700; font-size: 3cqw; color: var(--muted); white-space: nowrap; }
+.tbl td.r { background: var(--redL); }
+.tbl .gap td { font-weight: 700; font-size: 2.9cqw; }
+.tbl .gap td:nth-child(2) { color: var(--pinkText); }
+.tbl .lg td { font-family: var(--display); font-size: 3.9cqw; }
+.t115 { border-style: dashed; }
+.t115 thead th { background: var(--card); font-family: var(--body); font-weight: 700; font-size: 3cqw; color: var(--muted); }
+.t115 tbody th { font-family: var(--display); font-weight: 400; font-size: 3.6cqw; color: var(--ink); }
+.t115 td { font-size: 3.3cqw; }
+.stamp { align-self: flex-start; font: 700 3cqw/1.2 var(--body); color: var(--pinkText); border: 2.5px solid var(--pinkText); border-radius: 8px; padding: 1.2cqw 2.2cqw; transform: rotate(-2deg); background: var(--card); }
+
+/* two doors side by side */
+.cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2cqw 2.2cqw; }
+.cmp .hd { font-family: var(--display); font-size: 4.6cqw; text-align: center; border: 2px solid var(--ink); border-radius: 10px; padding: .6cqw; }
+.cmp .hd.r { background: var(--redL); } .cmp .hd.e { background: var(--blueL); }
+.cmp .lb { grid-column: 1 / -1; font: 700 3cqw/1 var(--body); color: var(--muted); margin-top: .6cqw; display: flex; align-items: center; gap: 2cqw; }
+.cmp .lb::after { content: ""; flex: 1; border-top: 2px dotted var(--line); }
+.cmp p { font-size: 3.05cqw; line-height: 1.42; }
+
+/* fees */
+.fee { display: grid; gap: 1cqw; }
+.fee h3 { margin: 0; font: 700 3.2cqw/1.35 var(--body); }
+.fee h3 .k { margin-right: 1.6cqw; }
+.fee h3 span.n { font-weight: 400; font-size: 2.8cqw; color: var(--muted); }
+.fee ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .7cqw 2cqw; }
+.fee li { font-size: 3cqw; line-height: 1.3; border-bottom: 1.5px dotted var(--line); padding-bottom: .5cqw; }
+.fee li b { display: inline-block; min-width: 3.4em; }
+.fee ul.ref { border: 2px dashed var(--line); border-radius: 10px; padding: 1cqw 1.6cqw; }
+.fee .sub { font: 700 2.8cqw/1.2 var(--body); color: var(--muted); margin-top: .4cqw; }
+.sum { display: grid; grid-template-columns: 1fr 1fr; gap: 2cqw; }
+.sum div { border: 2px solid var(--ink); border-radius: 12px; padding: 1.2cqw 2.4cqw; text-align: center; }
+.sum div:first-child { background: var(--redL); } .sum div:last-child { background: var(--blueL); }
+.sum i { display: block; font-style: normal; font-size: 2.8cqw; }
+.sum b { font-family: var(--display); font-weight: 400; font-size: 5cqw; line-height: 1.15; }
+
+/* checklist */
+.chk { list-style: none; padding: 0; display: grid; gap: 1.3cqw; }
+.chk li { display: grid; grid-template-columns: 5.2cqw 1fr; gap: 2cqw; font-size: 3.02cqw; line-height: 1.42; }
+.chk li::before { content: ""; width: 4.4cqw; height: 4.4cqw; margin-top: .4cqw; border: 2px solid var(--ink); border-radius: 5px; background: var(--card); box-shadow: 2px 2px 0 var(--sun); }
+.chips { display: flex; flex-wrap: wrap; gap: 1cqw; margin: .8cqw 0 .4cqw; }
+.chips span { font: 700 2.85cqw/1.15 var(--body); padding: .9cqw 1.6cqw; border: 1.5px solid var(--ink); border-radius: 8px; background: var(--redL); }
+
+/* FAQ */
+.faq { display: grid; gap: 1.2cqw; margin: 0; }
+.faq div { display: grid; gap: .3cqw; }
+.faq dt { font-weight: 700; font-size: 3.35cqw; line-height: 1.35; display: flex; gap: 1.6cqw; align-items: baseline; }
+.faq dt span { flex: none; font-family: var(--display); font-weight: 400; font-size: 3cqw; width: 5.4cqw; height: 5.4cqw; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--sun); color: #2E2541; }
+.faq dd { margin: 0 0 0 7cqw; font-size: 3cqw; line-height: 1.42; }
+.faq dd small { font-size: 2.5cqw; color: var(--muted); margin-left: .6em; white-space: nowrap; }
+
+/* links */
+.eps { padding-left: 0; list-style: none; display: grid; gap: 1.3cqw; }
+.eps li { font-size: 3.15cqw; line-height: 1.4; }
+.eps li a { display: block; font-size: 3cqw; }
+.big { display: inline-block; margin-top: .6cqw; font-size: 3.6cqw; font-weight: 700; }
+.ph { display: inline-block; margin-top: .6cqw; padding: .8cqw 2cqw; border: 2px dashed var(--ink); border-radius: 8px; background: var(--sunL); font-weight: 700; }
+.ask { font-size: 2.95cqw; line-height: 1.5; }
+
+/* web-only footer: sources, deadlines disclaimer, crisis line (not part of the carousel) */
+.site-foot { box-sizing: border-box; width: min(540px, 100%); margin: 36px auto 0; padding: 22px 22px 8px; border-top: 3px solid var(--ink); color: var(--ink); }
+.site-foot h2 { font-size: 22px; margin: 0 0 10px; }
+.site-foot h3 { font: 700 15px/1.4 var(--body); margin: 16px 0 6px; }
+.site-foot p, .site-foot li { font-size: 14px; line-height: 1.65; }
+.site-foot ul { padding-left: 1.2em; gap: 4px; }
+.site-foot .note { margin-top: 14px; padding: 12px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--sunL); }
+.site-foot .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main class="stack">
+
+<!-- 1 封面 -->
+<section class="card cover" id="c1"><div class="in">
+  <img class="art" src="img/castle.jpg" alt="像素風的城堡掛著「師大 116」校旗，左門寫推甄、右門寫一般考試；左邊放榜板顯示未錄取，右邊倒數時鐘寫報名截止、剩 1 天">
+  <span class="tag">我要成為心理師　EP2 懶人包</span>
+  <div class="row"><h1>116 諮商所<br><mark>報名月曆</mark></h1><svg class="heart" viewBox="0 0 16 14" aria-hidden="true"></svg></div>
+  <div class="alarm"><small>師大 116 學年度</small><strong>推甄 <em>11/19</em> 放榜，<br>一般考試 <em>11/20 下午 5 點</em>就截止</strong></div>
+  <ul class="toc"><li>11–12 月月曆</li><li>考試時程</li><li>兩扇門比較</li><li>報名費</li><li>檢查表</li><li>常見問題</li></ul>
+  <div class="foot"><span>有間心房　IG @heart__atrium</span><span>簡章查到：2026 年 11 月 3 日</span></div>
+</div></section>
+
+<!-- 2 11–12 月月曆（116 官方） -->
+<section class="card" id="c2"><div class="in">
+  <span class="tag">月曆①　116 官方</span>
+  <h2>11–12 月月曆</h2>
+  <div class="legend"><span class="k r">推甄放榜</span><span class="k e">一般考試報名</span><span>黃色＝最趕的兩天</span></div>
+  <div class="cal">
+    <div class="mon"><div class="mh">11 月<span>2026</span></div>
+      <div class="d"><span class="dt"><b>10</b><i>週二</i></span><span class="evs"><span class="ev r">臺南 推甄放榜</span><span class="ev e">師大 考試開始報名</span></span></div>
+      <div class="d"><span class="dt"><b>13</b><i>週五</i></span><span class="evs"><span class="ev r">清大 推甄放榜</span></span></div>
+      <div class="d"><span class="dt"><b>16</b><i>週一</i></span><span class="evs"><span class="ev r">北市大 推甄放榜</span></span></div>
+      <div class="d"><span class="dt"><b>18</b><i>週三</i></span><span class="evs"><span class="ev r">國北教 推甄放榜</span></span></div>
+      <div class="d hot"><span class="dt"><b>19</b><i>週四</i></span><span class="evs"><span class="ev r"><b>師大</b> 推甄放榜</span></span></div>
+      <div class="d hot"><span class="dt"><b>20</b><i>週五</i></span><span class="evs"><span class="ev e"><b>師大</b> 考試截止 17:00</span><span class="ev r" style="font-weight:400;box-shadow:none;border-width:1.5px">彰師 推甄放榜</span></span></div>
+      <div class="d"><span class="dt"><b>24</b><i>週二</i></span><span class="evs"><span class="ev r">高師 推甄放榜</span><span class="ev e">政大 考試開始報名</span></span></div>
+    </div>
+    <div class="mon"><div class="mh">12 月<span>2026</span></div>
+      <div class="d"><span class="dt"><b>1</b><i>週二</i></span><span class="evs"><span class="ev r">政大 推甄放榜</span></span></div>
+      <div class="d"><span class="dt"><b>7</b><i>週一</i></span><span class="evs"><span class="ev e">高師 考試開始報名</span></span></div>
+      <div class="d"><span class="dt"><b>8</b><i>週二</i></span><span class="evs"><span class="ev e">政大 考試截止</span></span></div>
+      <div class="d"><span class="dt"><b>15</b><i>週二</i></span><span class="evs"><span class="ev r">東華 推甄放榜</span></span></div>
+      <div class="d"><span class="dt"><b>30</b><i>週三</i></span><span class="evs"><span class="ev e">高師 考試截止</span></span></div>
+      <div class="alert"><b>師大：放榜隔天<br>就截止</b><p>等高師、政大、東華的推甄結果，就來不及報師大。<strong>考試先報，不要等。</strong></p></div>
+    </div>
+  </div>
+  <p class="small">清大＝心諮系甲組。其他學校的一般考試還沒公告，見第 4 張。</p>
+  <div class="foot"><span>依據：9 校 116 甄試簡章；師大、政大、高師 116 考試簡章</span><span>2 / 10</span></div>
+</div></section>
+
+<!-- 3 一般考試：116 已公告的三間 -->
+<section class="card" id="c3"><div class="in">
+  <span class="tag">月曆②　116 官方</span>
+  <h2>一般考試：已公告的三間</h2>
+  <table class="tbl">
+    <colgroup><col style="width:22%"><col style="width:26%"><col style="width:26%"><col style="width:26%"></colgroup>
+    <thead><tr><th scope="col"><span class="small" style="font-size:2.6cqw">116 學年度</span></th><th scope="col">師大</th><th scope="col">政大</th><th scope="col">高師</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">推甄放榜</th><td class="r">11/19</td><td class="r">12/1</td><td class="r">11/24</td></tr>
+      <tr><th scope="row">考試報名</th><td>11/10–<br>11/20 17:00</td><td>11/24–<br>12/8</td><td>12/7–<br>12/30</td></tr>
+      <tr class="gap"><th scope="row">時間差</th><td>放榜隔天<br>就截止</td><td>放榜後<br>還有 7 天</td><td>放榜 13 天後<br>才開放報名</td></tr>
+      <tr class="lg"><th scope="row">筆試</th><td>1/26</td><td>2/1–2/2</td><td>2/15</td></tr>
+      <tr><th scope="row">口試</th><td>3/6</td><td>3/12</td><td>3/19</td></tr>
+      <tr><th scope="row">放榜</th><td>3/18</td><td>3/24</td><td>4/9 預定</td></tr>
+      <tr><th scope="row">名額<br><span style="font-weight:400;font-size:2.6cqw">推甄／考試</span></th><td>12／8</td><td>5／8</td><td>14／12</td></tr>
+    </tbody>
+  </table>
+  <p class="small">推甄放榜、報名在 115 年，筆試以後是 116 年。政大 12/8 中午 12 點前要取號、下午 3 點前登錄。師大＝教心系諮商心理學組，政大＝輔導與諮商學程，高師＝諮復所諮商心理組。</p>
+  <div class="foot"><span>依據：師大、政大、高師 116 學年度碩士班考試、甄試招生簡章</span><span>3 / 10</span></div>
+</div></section>
+
+<!-- 4 還沒公告的學校：115 參考 -->
+<section class="card" id="c4"><div class="in">
+  <div class="row" style="gap:2.4cqw"><span class="tag off">月曆③　115 參考</span><span class="stamp">116 待公告</span></div>
+  <h2>還沒公告的，先看上一屆</h2>
+  <table class="tbl t115">
+    <colgroup><col style="width:17%"><col style="width:31%"><col style="width:18%"><col style="width:17%"><col style="width:17%"></colgroup>
+    <thead><tr><th scope="col">學校</th><th scope="col">報名</th><th scope="col">筆試</th><th scope="col">口試</th><th scope="col">放榜</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">國北教</th><td>11/20–12/10</td><td>2/1</td><td>3/7</td><td>3/18</td></tr>
+      <tr><th scope="row">清大</th><td>12/2–12/9</td><td>2/4</td><td>3/13</td><td>3/27</td></tr>
+      <tr><th scope="row">北市大</th><td>12/2–12/23</td><td>3/7</td><td>3/21</td><td>3/30</td></tr>
+      <tr><th scope="row">彰師</th><td>12/12–12/30</td><td>3/7</td><td>3/27</td><td>4/13</td></tr>
+      <tr><th scope="row">中教大</th><td>12/23–1/14</td><td>3/7–3/8</td><td>4/11</td><td>4/24</td></tr>
+      <tr><th scope="row">東華</th><td>12/31–1/21</td><td>3/8</td><td>3/21</td><td>3/30</td></tr>
+    </tbody>
+  </table>
+  <p class="small">以上是 <b>115 學年度</b>（上一屆）的日期，116 的簡章到 11/3 還沒公告，日期以各校簡章為準。臺南、嘉義、暨南、屏東沒查到 115 簡章原文，先不列。</p>
+  <div class="box r"><p><b>上一屆有 4 間的筆試擠在同一個週末</b>（北市大、彰師、中教大 3/7，東華 3/8）。筆試撞期只能選一間。</p></div>
+  <div class="foot"><span>依據：國北教、清大、北市大、彰師、中教大、東華 115 學年度碩士班考試簡章（各校諮商相關系組）</span><span>4 / 10</span></div>
+</div></section>
+
+<!-- 5 兩扇門比較 -->
+<section class="card" id="c5"><div class="in">
+  <span class="tag">兩扇門比較</span>
+  <h2>推甄 vs 一般考試</h2>
+  <div class="cmp">
+    <div class="hd r">推甄</div><div class="hd e">一般考試</div>
+    <div class="lb">考什麼</div>
+    <p><b>書審</b>（自傳、讀書或研究計畫、在校成績；有的要推薦信）＋<b>面試</b></p>
+    <p><b>筆試</b>（諮商一定考，測驗與統計大多考，其他看學校）＋<b>口試</b></p>
+    <div class="lb">怎麼算分</div>
+    <p>大多是書審 30–50%、面試 50–70%；高師口試 70%，<b>沒到 70 分不錄取</b></p>
+    <p>筆試過了才口試（師大只讓名額 2 倍進、政大約 4.5 倍）；口試佔 40–60%</p>
+    <div class="lb">限不限科系</div>
+    <p>政大、彰師、高師、臺南<b>限相關科系</b>（政大研究所畢業不限，高師非本科要證照＋2 年專職經驗）；師大、國北教、東華不限</p>
+    <p><b>大多不限</b>：政大、高師（116）、彰師（115）不限；臺南考試簡章未查到</p>
+  </div>
+  <div class="box b"><p><b>兩扇門最後都走進口試：</b>有些學校（像師大、北市大）會請你當場演練一段諮商。</p></div>
+  <div class="foot"><span>依據：各校 116 推甄、考試簡章；彰師、北市大 115 考試簡章</span><span>5 / 10</span></div>
+</div></section>
+
+<!-- 6 報名費總表 -->
+<section class="card" id="c6"><div class="in">
+  <span class="tag">報名費</span>
+  <h2>報名費總表（諮商組）</h2>
+  <div class="fee">
+    <h3><span class="k r">推甄</span>116 官方　<span class="n">＋後面是過了初審才繳的</span></h3>
+    <ul>
+      <li><b>師大</b>1,500</li><li><b>政大</b>1,500</li>
+      <li><b>國北教</b>1,800</li><li><b>臺南</b>1,300</li>
+      <li><b>彰師</b>1,300（校友 1,000）</li><li><b>高師</b>1,000＋500</li>
+      <li><b>東華</b>1,200＋500</li><li><b>北市大</b>1,200＋1,600</li>
+    </ul>
+    <h3><span class="k e">一般考試</span>116 官方　<span class="n">＋後面是進了口試才繳的</span></h3>
+    <ul>
+      <li><b>師大</b>1,300＋1,200</li><li><b>政大</b>1,300＋1,000</li>
+      <li><b>高師</b>800＋500</li>
+    </ul>
+    <p class="sub">115 參考（116 待公告）</p>
+    <ul class="ref">
+      <li><b>國北教</b>1,500＋1,000</li><li><b>清大</b>1,500（不另收）</li>
+      <li><b>彰師</b>1,300＋1,200</li><li><b>中教大</b>1,200＋800</li>
+      <li><b>東華</b>1,200＋500</li>
+    </ul>
+  </div>
+  <div class="sum"><div><i>8 間推甄全報、都過初審</i><b>約 13,400 元</b></div><div><i>8 間考試全報、都進口試</i><b>約 16,300 元</b></div></div>
+  <p class="small">單位：元，交通、住宿另計；考試總額有 5 間用 115 的價錢。低收、中低收入戶可減免，各校不同。</p>
+  <div class="foot"><span>依據：各校 116 推甄簡章、116 和 115 考試簡章</span><span>6 / 10</span></div>
+</div></section>
+
+<!-- 7 兩扇一起走的檢查表 -->
+<section class="card" id="c7"><div class="in">
+  <span class="tag" style="background:var(--greenL)">兩扇一起走</span>
+  <h2>兩扇門一起走：檢查表</h2>
+  <ul class="chk">
+    <li><span><b>考試先報，不要等推甄結果。</b>師大考試 11/20 下午 5 點截止，等高師、政大、東華放榜就來不及。</span></li>
+    <li><span><b>兩邊都可以報。</b>查到的 7 間都沒禁止；清大、彰師（115 簡章）還寫明推甄已報到也能報。兩邊都上，擇一報到。</span></li>
+    <li><span><b>政大要交放棄聲明書：</b>兩邊都正取（或備取已遞補），要交「甄試放棄入學資格聲明書」，不交就當你放棄考試。</span></li>
+    <li><span><b>推甄空出來的位子會併入考試：</b>沒招滿或錄取後放棄的名額，9 校推甄簡章都寫會併入（或流用到）考試，所以考試名額可能比簡章多。</span></li>
+    <li><span><b>推甄備取要先上網登記，沒登記就沒資格：</b>
+      <span class="chips"><span>北市大 11/20 16:00</span><span>國北教 11/23 17:30</span><span>師大 11/27 16:00</span><span>政大 12/11 17:00</span><span>彰師 12/16 17:00</span></span>
+      師大不另外通知，每週五自己上網看遞補。</span></li>
+    <li><span><b>備取遞補到幾月：</b>推甄最晚到 2 月開學（高師 12/31、政大 1/31、師大 2/12、國北教 2/15、彰師與東華 2/22）；考試備取可以等到 9 月開學前（政大 8/31）。</span></li>
+  </ul>
+  <div class="foot"><span>依據：各校 116 推甄、考試簡章；清大、彰師 115 考試簡章；教育部〈大學辦理招生規定審核作業要點〉第四、七點</span><span>7 / 10</span></div>
+</div></section>
+
+<!-- 8 常見問題：影片裡的五題 -->
+<section class="card" id="c8"><div class="in">
+  <span class="tag" style="background:var(--sunL)">考生常問　影片裡的五題</span>
+  <h2>推甄沒上怎麼辦？</h2>
+  <dl class="faq">
+    <div><dt><span>1</span>備取有機會嗎？要等多久？</dt>
+      <dd>推甄備取最晚補到 2 月，考試備取可以等到 9 月開學前。師大不另外通知，每週五要自己上網看。<small>教育部要點第七點、師大推甄</small></dd></div>
+    <div><dt><span>2</span>在校成績要多高？</dt>
+      <dd>推甄只有政大、彰師要班排前 50%，其他學校不設門檻，但會算進書審；一般考試大多不看。<small>各校推甄、政大考試</small></dd></div>
+    <div><dt><span>3</span>錄取了可以放棄嗎？</dt>
+      <dd>可以，填放棄聲明書，簡章都沒寫罰則，但不能反悔。早點放棄，後面的備取才上得去。<small>師大、東華推甄</small></dd></div>
+    <div><dt><span>4</span>推甄上了，考試報名費退得回來嗎？</dt>
+      <dd>大多不能。例外：彰師推甄生報彰師考試免報名費；北市大截止前書面取消可退（扣 200 元）。<small>三校考試、彰師推甄、北市大 115</small></dd></div>
+    <div><dt><span>5</span>兩間學校考同一天怎麼辦？</dt>
+      <dd>筆試撞期只能選一間；口試只有少數學校（像高師）願意當天換時段。報名前自己先排開。<small>師大考試、北市大 115 考試、高師推甄</small></dd></div>
+  </dl>
+  <div class="foot"><span>答案來自簡章和教育部規定；沒寫年份＝116 學年度</span><span>8 / 10</span></div>
+</div></section>
+
+<!-- 9 常見問題：影片沒講的 -->
+<section class="card" id="c9"><div class="in">
+  <span class="tag" style="background:var(--sunL)">考生常問　影片沒講的</span>
+  <h2>還有這幾題</h2>
+  <dl class="faq">
+    <div><dt><span>6</span>應屆生的畢業證書什麼時候交？</dt>
+      <dd>各校不同，例：師大推甄、考試都是 116 年 8 月 13 日前，高師推甄 7 月 31 日前。交不出來，錄取資格會被取消。<small>師大推甄與考試、高師推甄</small></dd></div>
+    <div><dt><span>7</span>沒有大學學歷，能報嗎？</dt>
+      <dd>可以用「同等學力」報，例：專科畢業、離校 2 到 3 年以上（看學制）。但政大推甄不收、清大推甄限大學畢業，高師要 2 年以上相關工作經驗。<small>教育部同等學力認定標準第五條；政大、清大、高師簡章</small></dd></div>
+    <div><dt><span>8</span>男生等備取，會被叫去當兵嗎？</dt>
+      <dd>有的簡章寫可以憑准考證或錄取通知單辦延期徵集（彰師、清大、東華），實際以戶籍地公所兵役課為準。<small>彰師、東華推甄；清大 115 考試</small></dd></div>
+    <div><dt><span>9</span>要報幾間？總共要花多少？</dt>
+      <dd>間數沒有上限，也可以同時報別校；同一間學校上了好幾個，只能擇一報到。費用看第 6 張：8 間推甄約 13,400 元、8 間考試約 16,300 元。<small>師大推甄、高師考試</small></dd></div>
+  </dl>
+  <div class="foot"><span>沒寫年份的是 116 學年度簡章；招生規定以各校當年簡章為準</span><span>9 / 10</span></div>
+</div></section>
+
+<!-- 10 連結 -->
+<section class="card" id="c10"><div class="in">
+  <span class="tag">看更多</span>
+  <div class="row" style="justify-content:space-between"><h2>完整影片在 YouTube</h2><svg class="heart" viewBox="0 0 16 14" aria-hidden="true" style="width:9cqw"></svg></div>
+  <div class="box b"><p><b>我要成為心理師 EP2</b>　推甄跟考試：諮商所哪扇門好進？還可以兩扇一起走？<br><a class="big" href="https://youtu.be/iPzjWp8vaUI">▶ youtu.be/iPzjWp8vaUI</a></p></div>
+  <ul class="eps">
+    <li><b>上一集 EP1</b>　怎麼當心理師？370 人搶 8 個位子<a href="https://youtu.be/NSUUJPSnfE0">youtu.be/NSUUJPSnfE0</a></li>
+    <li><b>懶人包「心理師之路」</b>　研究所、實習、國考三關<a href="https://leopork.github.io/free-counseling/psychologist-path/">leopork.github.io/free-counseling/psychologist-path/</a></li>
+    <li><b>諮商新手村 EP3</b>　諮商室 50 分鐘（也介紹心理師有哪幾種）<a href="https://youtu.be/vuwDib6Ubjs">youtu.be/vuwDib6Ubjs</a></li>
+    <li><b>播放清單「我要成為心理師」</b><a href="https://www.youtube.com/playlist?list=PLCye8Bqwstm4">youtube.com/playlist?list=PLCye8Bqwstm4</a></li>
+  </ul>
+  <p class="ask">你今年走哪一扇門？推甄、考試，還是兩扇都走？<b style="white-space:nowrap">留言告訴怦怦</b>。下一集：不是心理系怎麼準備？<b style="white-space:nowrap">追蹤 @heart__atrium</b></p>
+  <p class="small">現在很難熬嗎？安心專線 1925（24 小時免付費）。招生日期、名額、報名費以各校當年簡章為準。</p>
+  <div class="foot"><span>有間心房　YouTube @heartatrium<br>IG、Threads @heart__atrium</span><span>10 / 10</span></div>
+</div></section>
+
+</main>
+
+<footer class="site-foot">
+  <h2>資料來源</h2>
+  <p class="muted">日期、名額、報名費都是讀各校官方簡章的原文整理（2026 年 11 月 2–3 日查）。116 學年度一般考試到 11/3 只有師大、政大、高師公告；其他學校用 115 學年度的日期當參考。</p>
+  <h3>116 學年度碩士班一般考試簡章</h3>
+  <ul>
+    <li><a href="https://www.aa.ntnu.edu.tw/uploads/bulletin_file/file/6ad5bee9843f751d488c4a71/116%E7%A2%A9%E5%A3%AB%E7%8F%AD%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0.pdf">師大（教育心理與輔導學系諮商心理學組）</a></li>
+    <li><a href="https://mpcg.nccu.edu.tw/upload/47/doc/14439/116%E7%A2%A9%E7%8F%AD%E7%B0%A1%E7%AB%A0.pdf">政大（輔導與諮商碩士學位學程）</a></li>
+    <li><a href="https://c.nknu.edu.tw/aca/UploadFile/userfiles/4/files/%E6%8B%9B%E7%94%9F%E7%9B%AE%E9%8C%84/08%E6%AD%B7%E5%B1%86%E7%B0%A1%E7%AB%A0/07%E7%A2%A9%E5%A3%AB%E7%8F%AD%E8%80%83%E8%A9%A6/116M.pdf">高師（諮商心理與復健諮商研究所諮商心理組）</a></li>
+  </ul>
+  <h3>116 學年度碩士班甄試（推甄）簡章</h3>
+  <ul>
+    <li><a href="https://www.aa.ntnu.edu.tw/zh_tw/admission/116%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%A2%A9%E5%A3%AB%E7%8F%AD%E7%94%84%E8%A9%A6%E5%85%A5%E5%AD%B8%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%E6%9A%A8%E9%99%84%E4%BB%B6-19495647">師大</a>、<a href="https://mecas.nccu.edu.tw/upload/48/doc/42637/116%E5%AD%B8%E5%B9%B4%E5%BA%A6%E6%94%BF%E5%A4%A7%E7%A2%A9%E5%8D%9A%E7%94%84%E7%B0%A1%E7%AB%A0.pdf">政大</a>、<a href="https://cprc.nknu.edu.tw/UploadFile/News/2026911165118/116M1.pdf">高師</a>、<a href="https://acadaff.ncue.edu.tw/p/406-1002-34643,r154.php?Lang=zh-tw">彰師</a>、<a href="https://cict.ntue.edu.tw/uploads/asset/data/6aa21f096a6ab608c40e1794/116%E7%A2%A9%E5%A3%AB%E7%8F%AD%E7%94%84%E8%A9%A6%E5%85%A5%E5%AD%B8%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E5%85%AC%E5%91%8A_.pdf">國北教</a>、<a href="https://admission.utaipei.edu.tw/var/file/33/1033/img/283/502665083.pdf">北市大</a>（<a href="https://admission.utaipei.edu.tw/var/file/33/1033/img/283/417711479.pdf">日程表</a>）、<a href="https://adms.site.nthu.edu.tw/var/file/207/1207/img/345/401058547.pdf">清大</a>、<a href="https://exam.ndhu.edu.tw/var/file/104/1104/attach/56/pta_156785_6778914_46770.pdf">東華</a>、<a href="https://campus.nutn.edu.tw/newsPost3/postFiles/105614_116%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%A2%A9%E5%A3%AB%E7%8F%AD%E7%94%84%E8%A9%A6%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0.pdf">臺南</a></li>
+  </ul>
+  <h3>115 學年度碩士班一般考試簡章（參考）</h3>
+  <ul>
+    <li><a href="https://admission.utaipei.edu.tw/var/file/33/1033/img/1874/260413027.pdf">北市大</a>、<a href="https://exam.ndhu.edu.tw/var/file/104/1104/attach/31/pta_151092_1455393_72399.pdf">東華</a></li>
+    <li>國北教、彰師、清大、中教大：見各校招生網歷年簡章（<a href="https://exam.ntue.edu.tw">國北教</a>、<a href="https://acadaff.ncue.edu.tw/p/403-1002-154-1.php?Lang=zh-tw">彰師</a>、<a href="https://adms.site.nthu.edu.tw/p/403-1207-323-1.php?Lang=zh-tw">清大</a>、<a href="https://www.ntcu.edu.tw/">中教大</a>）</li>
+  </ul>
+  <h3>法規</h3>
+  <ul>
+    <li><a href="https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000475">教育部〈大學辦理招生規定審核作業要點〉</a>（115.01.19 修正）第四點（推甄缺額流用到考試）、第七點（備取遞補期限）</li>
+    <li><a href="https://edu.law.moe.gov.tw/LawContent.aspx?id=FL008644">教育部〈入學大學同等學力認定標準〉</a>（111.01.25 修正）第五條</li>
+  </ul>
+  <div class="note">
+    <p><b>招生日期、名額、報名費以各校當年簡章為準。</b>簡章公告後如果改期，以學校公告為準。</p>
+    <p>現在很難熬嗎？安心專線 1925（24 小時免付費）、生命線 1995、張老師 1980；有立即危險請撥 119 或 110。</p>
+  </div>
+  <p class="muted" style="margin-top:12px">本頁為升學資訊整理，不推薦特定補習班、顧問或研究所。有間心房　YouTube @heartatrium／IG、Threads @heart__atrium</p>
+</footer>
+
+<script>
+// 怦怦, the channel's pixel heart, drawn from the same 16×14 grid as in the videos
+const HM = ["..OOOO....OOOO..", ".OLLPPO..OPPPPO.", "OLLPPPPOOPPPPPPO", "OLPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPPO", "OPPPPPPPPPPPPPDO", ".OPPPPPPPPPPPDO.", "..OPPPPPPPPPDO..", "...OPPPPPPPDO...", "....OPPPPPDO....", ".....OPPPDO.....", "......OPDO......", ".......OO......."];
+const HC = { O: '#2E2541', P: '#FF5C7A', L: '#FFC2CE', D: '#E0406A' };
+const face = { '4,5': 'O', '5,5': 'O', '4,6': 'O', '5,6': 'O', '10,5': 'O', '11,5': 'O', '10,6': 'O', '11,6': 'O', '6,8': 'O', '7,9': 'O', '8,9': 'O', '9,8': 'O', '2,7': 'B', '3,7': 'B', '12,7': 'B', '13,7': 'B' };
+let s = '';
+HM.forEach((row, y) => [...row].forEach((c, x) => {
+  if (c === '.') return;
+  const f = face[x + ',' + y], col = f === 'O' ? '#2E2541' : f === 'B' ? '#FF9DB3' : HC[c];
+  s += `<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${col}"/>`;
+}));
+document.querySelectorAll('svg.heart').forEach(h => { h.innerHTML = s; });
+</script>
+
+</body>
+</html>
